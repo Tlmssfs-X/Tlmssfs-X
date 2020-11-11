@@ -1,99 +1,57 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>Tlmssfs&#39;s blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分享与记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tlmssfs&#39;s blog">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Tlmssfs&#39;s blog">
-<meta property="og:description" content="分享与记录">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="tlmssfs">
-<meta property="article:tag" content="技术&#39;生活">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternative" href="/atom.xml" title="Tlmssfs&#39;s blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
-  
-<meta name="generator" content="Hexo 5.2.0"></head>
-<body>
-<div id="container">
-  <div id="wrap">
-    <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Tlmssfs&#39;s blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
-          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
-          <input type="submit" value="" class="search-form-submit">
-          <input name=tn type=hidden value="bds">
-          <input name=cl type=hidden value="3">
-          <input name=ct type=hidden value="2097152">
-          <input type="hidden" name="si" value="example.com">
-        </form>
-      </div>
-    </div>
-  </div>
+
+<title>Tlmssfs&#39;s blog</title>
+
+
+<link rel="stylesheet" href="/styles/main.css">
+
+
+    <meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <div class="container">
+            <header>
+<div class="main">
+<div class="title">
+    <a href="#" class="logo">Tlmssfs&#39;s blog</a>
+</div>
+<div class="site-nav">
+    <ul id="menu" class="menu">
+    
+        <li class="menu-item text-underline">
+            <a href="/">主页</a>
+        </li>
+    
+        <li class="menu-item text-underline">
+            <a href="/archives">归档</a>
+        </li>
+    
+        <li class="menu-item text-underline">
+            <a href="/about/">关于</a>
+        </li>
+            
+    </ul>
+</div>
+</div>
 </header>
-    <div class="outer">
-      <section id="main">
-  
-    <article id="post-thinkphp5-1-16-5-1-40反序列化漏洞分析" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/09/thinkphp5-1-16-5-1-40%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/" class="article-date">
-  <time datetime="2020-11-09T13:37:25.000Z" itemprop="datePublished">2020-11-09</time>
-</a>
+            <main class="main">
+                <section class="posts clearfix">
+    <div class="posts-wrapper">
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/09/thinkphp5-1-16-5-1-40%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/">thinkphp5.1.16-5.1.40反序列化漏洞分析</a>
-    </h1>
-  
+        <article class="post article-entry">
+            <div class="post-title">
+                <a class="post-title-link text-underline" href="/2020/11/09/thinkphp5-1-16-5-1-40%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/">thinkphp5.1.16-5.1.40反序列化漏洞分析</a>
+            </div>
+            <p class="sub">11月 09 2020</p>
+            <div class="post-content">
+                <p>最近在学代码审计，很好奇PHP反序列化漏洞在实际场景的代码中是怎么产生和利用的，于是学了几天thinkphp5开发，然后开始分析tp5一个反序列化漏洞。走出舒适区真吃力。</p>
+<a id="more"></a>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="thinkphp5-1-16-5-1-40反序列化漏洞分析"><a href="#thinkphp5-1-16-5-1-40反序列化漏洞分析" class="headerlink" title="thinkphp5.1.16-5.1.40反序列化漏洞分析"></a>thinkphp5.1.16-5.1.40反序列化漏洞分析</h1><p>条件：（满足一个条件就可以了）</p>
+<h1 id="thinkphp5-1-16-5-1-40反序列化漏洞分析"><a href="#thinkphp5-1-16-5-1-40反序列化漏洞分析" class="headerlink" title="thinkphp5.1.16-5.1.40反序列化漏洞分析"></a>thinkphp5.1.16-5.1.40反序列化漏洞分析</h1><p>条件：（满足一个条件就可以了）</p>
 <ol>
 <li>需要一个二次开发反序列化的利用点</li>
 <li>存在文件上传、文件名完全可控、使用了文件操作函数，例如： file_exists(‘phar://恶意文件’)</li>
@@ -149,14 +107,14 @@
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">filterValue</span>(<span class="params">&amp;$value, $key, $filters</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $default = array_pop($filters);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">foreach</span> ($filters <span class="keyword">as</span> $filter) &#123;</span><br><span class="line">        <span class="keyword">if</span> (is_callable($filter)) &#123;</span><br><span class="line">            <span class="comment">// 调用函数或者方法过滤</span></span><br><span class="line">            $value = call_user_func($filter, $value);</span><br><span class="line">        &#125;</span><br><span class="line">		...</span><br><span class="line">&#123;</span><br></pre></td></tr></table></figure>
 
 <p>查找input方法的调用，有7处</p>
-<p>![thinkphp5%201%2016-5%201%2040%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%20d18eb996e0eb4877b8b55fdf50026ea1/Untitled.png](C:/Users/beibee/Desktop/tp5.1.x反序列化分析/thinkphp5 1 16-5 1 40反序列化漏洞分析 d18eb996e0eb4877b8b55fdf50026ea1/Untitled.png)</p>
+<p><img src="http://139.224.116.161:10050/photo/tp5unser/Untitled.png" alt="methods"></p>
 <p>由于param方法第一个参数可控，从这里入手</p>
 <p>接下来寻找控制$name的方法</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">param</span>(<span class="params">$name = <span class="string">&#x27;&#x27;</span>, $default = <span class="literal">null</span>, $filter = <span class="string">&#x27;&#x27;</span></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">$this</span>-&gt;mergeParam) &#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">true</span> === $name) &#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">$this</span>-&gt;input(<span class="keyword">$this</span>-&gt;param, $name, $default, $filter);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>查找调用了param的方法</p>
 <p>显然这里isAjax和isPjax都能控制</p>
-<p>![thinkphp5%201%2016-5%201%2040%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%20d18eb996e0eb4877b8b55fdf50026ea1/Untitled%201.png](C:/Users/beibee/Desktop/tp5.1.x反序列化分析/thinkphp5 1 16-5 1 40反序列化漏洞分析 d18eb996e0eb4877b8b55fdf50026ea1/Untitled 1.png)</p>
+<p>![isAjax和isPjax](<a target="_blank" rel="noopener" href="http://139.224.116.161:10050/photo/tp5unser/Untitled">http://139.224.116.161:10050/photo/tp5unser/Untitled</a> 1.png)</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">isAjax</span>(<span class="params">$ajax = <span class="literal">false</span></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $value  = <span class="keyword">$this</span>-&gt;server(<span class="string">&#x27;HTTP_X_REQUESTED_WITH&#x27;</span>);</span><br><span class="line">    $result = <span class="string">&#x27;xmlhttprequest&#x27;</span> == strtolower($value) ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="literal">true</span> === $ajax) &#123;</span><br><span class="line">        <span class="keyword">return</span> $result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    $result           = <span class="keyword">$this</span>-&gt;param(<span class="keyword">$this</span>-&gt;config[<span class="string">&#x27;var_ajax&#x27;</span>]) ? <span class="literal">true</span> : $result;</span><br><span class="line">    <span class="keyword">$this</span>-&gt;mergeParam = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> $result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>到这里就构造完成了，只需要使Windows类里面的$filename为可以调用Conversion类的__toString方法的对象，使Conversion类里的$relation对象为Request类的实例，用__call调用isAjax方法，控制这些方法里面的参数，最终就可以调用input方法，并执行任意命令。</p>
@@ -173,10 +131,11 @@
 <p>这个Pivot类是怎么和Windows类产生联系的？</p>
 <p>以上问题在这里找到了答案</p>
 <p><a target="_blank" rel="noopener" href="https://www.freebuf.com/column/221946.html">https://www.freebuf.com/column/221946.html</a></p>
-<p>![thinkphp5%201%2016-5%201%2040%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90%20d18eb996e0eb4877b8b55fdf50026ea1/Untitled%202.png](C:/Users/beibee/Desktop/tp5.1.x反序列化分析/thinkphp5 1 16-5 1 40反序列化漏洞分析 d18eb996e0eb4877b8b55fdf50026ea1/Untitled 2.png)</p>
+<p><img src="http://139.224.116.161:10050/photo/tp5unser/Untitled%202.png" alt="result1"></p>
 <h1 id="未解决的问题"><a href="#未解决的问题" class="headerlink" title="未解决的问题"></a>未解决的问题</h1><ol>
 <li>文件上传的怎么利用？phar文件反序列化？有什么限制？</li>
-<li>自己写个POC</li>
+<li>自己写个POC。</li>
+<li>怎么修复防御？</li>
 </ol>
 <h1 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h1><p>由于开发只懂一点点(也就只能写点简单的控制器，模块)，函数都是哪里不会查哪里，加上头一回分析这种框架里面的漏洞，过程十分艰辛，一度想过放弃，昨天上午就想看其他的来着，困扰我一两天的$this对象在调试代码的时候明白怎么回事了，加上网上POC都用不了，气得我愤而调试改POC，找到了解决办法（给我凑出一个POC来），这才完成大部分漏洞代码的理解。真的好吃力，但是收获也挺多的。</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://xz.aliyun.com/t/6619#toc-1">https://xz.aliyun.com/t/6619</a></p>
@@ -185,239 +144,93 @@
 <p><a target="_blank" rel="noopener" href="https://www.freebuf.com/column/221946.html">https://www.freebuf.com/column/221946.html</a></p>
 <p><a target="_blank" rel="noopener" href="https://paper.seebug.org/1040/">https://paper.seebug.org/1040/</a></p>
 
-      
+            </div>
+        </article>
+    
+</div>
+<div class="side-bar">
+
+
+    <div class="avator" id="avator">
+    <div class="title">
+        <a href="#" class="text-underline">About Me</a>
     </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://example.com/2020/11/09/thinkphp5-1-16-5-1-40%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/" data-id="ckhalj1j900001wu5ho0bbu6n" class="article-share-link" data-share="baidu" data-title="thinkphp5.1.16-5.1.40反序列化漏洞分析">分享到</a>
-      
-
-      
-        <a href="http://example.com/2020/11/09/thinkphp5-1-16-5-1-40%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag">代码</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/19/hello-world/" class="article-date">
-  <time datetime="2020-09-19T01:25:23.742Z" itemprop="datePublished">2020-09-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        <img src="avator.jpg" class="ava-img">
+        <h3 class="author">tlmssfs</h3>
+        <div class="icon-list">
+        <a href=""><i class="iconfont icon-weibo icon-item"></i></a>
+        <a href="tlmssfs@gmail.com"><i class="iconfont icon-email icon-item"></i></a>
+        <a target="_blank" rel="noopener" href="https://github.com/Tlmssfs-X/"><i class="iconfont icon-github icon-item"></i></a>
+        <a href=""><i class="iconfont icon-linkedin icon-item"></i></a>
+        </div>
+    <div class="tags">
+    <h3 class="tags-title">Tags</h3>
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag">代码</a><span class="tag-list-count">1</span></li></ul>
+</div>
     </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://example.com/2020/09/19/hello-world/" data-id="ckfkqkhou0000nku5h8586ywv" class="article-share-link" data-share="baidu" data-title="Hello World">分享到</a>
-      
-
-      
-        <a href="http://example.com/2020/09/19/hello-world/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
+</div>
 
 </section>
-      
-      <aside id="sidebar">
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag">代码</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 10px;">代码</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">近期文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/11/09/thinkphp5-1-16-5-1-40%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/">thinkphp5.1.16-5.1.40反序列化漏洞分析</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/19/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">友情链接</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="http://arvinxiang.com" target="_blank">主题作者</a>
-          </li>
-        
-          <li>
-            <a href="http://reqianduan.com" target="_blank">热前端</a>
-          </li>
-        
-          <li>
-            <a href="http://yuancheng.work" target="_blank">远程.work</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-      
-    </div>
-    <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 tlmssfs<br>
-      Powered by <a href="//hexo.io/" target="_blank">Hexo</a>
-      .
-      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
-    </div>
-  </div>
-</footer>
-  </div>
-  <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-  <!-- totop start -->
-<div id="totop">
-<a title="返回顶部"><img src="/img/scrollup.png"/></a>
-</div>
-
-<!-- totop end -->
-
-<!-- 多说公共js代码 start -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"reqianduan"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共js代码 end -->
 
 
-<!-- 百度分享 start -->
 
-<div id="article-share-box" class="article-share-box">
-  <div id="bdshare" class="bdsharebuttonbox article-share-links">
-    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
-    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
-    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
-    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
-    <a class="article-share-more" data-cmd="more" title="更多"></a>
+            </main>
+            <div class="copyright">
+  <div class="text">Powered By
+    <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/zjx137/hexo-theme-Tsu">Tsu</a> &copy 2019
   </div>
 </div>
-<script>
-  function SetShareData(cmd, config) {
-    if (shareDataTitle && shareDataUrl) {
-      config.bdText = shareDataTitle;
-      config.bdUrl = shareDataUrl;
-    }
-    return config;
-  }
-  window._bd_share_config={
-    "common":{onBeforeClick: SetShareData},
-    "share":{"bdCustomStyle":"/css/bdshare.css"}
-  };
-  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+
+        </div>
+    <div class="back-to-top" id="back-to-top">
+            <i class="iconfont icon-up"></i>
+    </div>
+        
+    </body>
+    
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+    
+<script src="/js/back-to-top.js"></script>
+
+    
+<script src="/js/scroll.js"></script>
+
+    <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": { 
+        preferredFont: "TeX", 
+        availableFonts: ["STIX","TeX"], 
+        linebreaks: { automatic:true }, 
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) 
+    },
+    tex2jax: { 
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
+        processEscapes: true, 
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {  
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, 
+        Macros: { href: "{}" } 
+    },
+    messageStyle: "none"
+    }); 
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-<!-- 百度分享 end -->
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-</div>
-</body>
 </html>
